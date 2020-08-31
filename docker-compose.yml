@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "8088:8088"
+  db:
+    image: postgres:9
+    environment:
+      POSTGRES_USER: "openolat"
+      POSTGRES_PASSWORD: "openolat"
+    ports:
+      - "5435:5432"
