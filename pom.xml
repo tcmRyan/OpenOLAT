@@ -103,7 +103,7 @@
 	    <test.env.webdriver.chrome.version>84.0.4147.30</test.env.webdriver.chrome.version>
 	    <test.env.webdriver.chrome.arguments></test.env.webdriver.chrome.arguments>
 	    <skipTests>true</skipTests>
-		<skipSeleniumTests>false</skipSeleniumTests>
+		<skipSeleniumTests>true</skipSeleniumTests>
 	</properties>
 	<profiles>
 		<profile>
@@ -1385,7 +1385,7 @@
 								<Implementation-Build>${buildNumber}</Implementation-Build>
 							</manifestEntries>
 						</archive>
-						<warSourceExcludes>**/*.pxm, **/*.psd, **/*.sh, static/bootstrap/**, **/*.README</warSourceExcludes>
+						<warSourceExcludes>**/*.pxm, **/*.psd, **/*.sh, **/*.README</warSourceExcludes>
 						<webResources>
 							<resource>
 								<directory>src/main/webapp</directory>
