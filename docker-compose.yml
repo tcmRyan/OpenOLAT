@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    build: .
+    image: tcmryan/openolat:latest
     depends_on:
       - db
     ports:
